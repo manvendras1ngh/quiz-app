@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.quiz {
+  padding: 1rem;
+}
+
+
+/* header component styling*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__heading {
+  margin: 0;
+  padding: 0;
+}
+
+.header__button {
+  cursor: pointer;
+  width: 2.8rem;
+}
+
+/* submit button style */
+button {
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #A2F6CD;
+  padding: .5em .8em;
+  border: 1px solid black;
+  border-radius: .5em;
+}
+
+/* quizQuest component style */
+.quiz-card {
+  margin: 1.5em 0;
+  padding: 1em;
+  box-shadow: 0px 0px 8px 1.5px rgba(0, 0, 0, .25);
+  border-radius: 5px;
+}
+
+.quiz-card__question {
+  margin: 0;
+  font-size: 1.12rem;
+  font-weight: 500;
+}
+
+.quiz-card__option {
+  margin: 1em 0 0;
+  font-weight: 300;
+}
+
+.quiz-card__option--green-bg {
+  background: #ADFFB7;
+}
+
+.quiz-card__option--red-bg {
+  background: red;
+}
+
+.quiz-card__option > label, input {
+  cursor: pointer;
+}
+
+/* score component style */
+.score-card__score {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+/* switch between light and dark mode */
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+  .quiz-card-options:hover{
+    background-color: #474747;
+  }
+}
